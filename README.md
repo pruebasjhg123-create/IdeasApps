@@ -1,4 +1,4 @@
-# 🚀 Ideas Browser - Plataforma de Descubrimiento de Tendencias
+# 🎯 OpportunityRadar - Descubridor de Tendencias y Oportunidades
 
 **Versión**: 1.0.0  
 **Estado**: En Desarrollo Activo  
@@ -6,7 +6,7 @@
 
 ## 📋 Descripción
 
-Ideas Browser es una plataforma SaaS innovadora diseñada para emprendedores y gestores de productos que desean identificar tendencias emergentes, nichos sin explorar y oportunidades de negocio prometedoras.
+OpportunityRadar es una plataforma SaaS innovadora diseñada para emprendedores, gestores de productos e inversores que desean identificar tendencias emergentes, nichos sin explorar y oportunidades de negocio prometedoras.
 
 La aplicación recopila y analiza datos de múltiples fuentes (Reddit, YouTube, Twitter/X) utilizando inteligencia artificial para detectar patrones, tendencias y oportunidades que otros podrían pasar por alto.
 
@@ -44,7 +44,7 @@ La aplicación recopila y analiza datos de múltiples fuentes (Reddit, YouTube, 
 ## 📁 Estructura del Proyecto
 
 ```
-IdeasApps/
+OpportunityRadar/
 ├── frontend/                 # Aplicación Next.js
 ├── backend/                  # API Express.js
 ├── database/                 # Configuración de BD
@@ -67,8 +67,8 @@ IdeasApps/
 
 1. **Clonar el repositorio**
    ```bash
-   git clone https://github.com/tu-usuario/IdeasApps.git
-   cd IdeasApps
+   git clone https://github.com/tu-usuario/OpportunityRadar.git
+   cd OpportunityRadar
    ```
 
 2. **Instalar dependencias**
@@ -104,7 +104,7 @@ Copia `.env.example` a `.env.local` y configura:
 
 ```env
 # Database
-MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/ideas-browser
+MONGODB_URI=mongodb+srv://user:pass@cluster.mongodb.net/opportunity-radar
 
 # JWT
 JWT_SECRET=tu_secreto_muy_seguro_aqui
@@ -126,12 +126,12 @@ NODE_ENV=development
 - `POST /api/v1/auth/login` - Login
 - `POST /api/v1/auth/refresh` - Refresh token
 
-### Ideas
-- `GET /api/v1/ideas` - Listar ideas
-- `POST /api/v1/ideas` - Crear idea
-- `GET /api/v1/ideas/:id` - Obtener idea
-- `PUT /api/v1/ideas/:id` - Actualizar idea
-- `DELETE /api/v1/ideas/:id` - Eliminar idea
+### Oportunidades
+- `GET /api/v1/opportunities` - Listar oportunidades
+- `POST /api/v1/opportunities` - Crear oportunidad
+- `GET /api/v1/opportunities/:id` - Obtener oportunidad
+- `PUT /api/v1/opportunities/:id` - Actualizar oportunidad
+- `DELETE /api/v1/opportunities/:id` - Eliminar oportunidad
 
 ### Integraciones
 - `GET /api/v1/integrations/reddit/status` - Estado de Reddit
@@ -176,12 +176,13 @@ Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](./LICENSE) p
 
 ## 👨‍💻 Autor
 
-**Ideas Browser Team**
+**OpportunityRadar Development Team**
 
 ## 🙏 Agradecimientos
 
 - Gracias a la comunidad de desarrolladores
-- Inspiración en Greg Isenberg y metodologías de descubrimiento de ideas
+- Inspiración en metodologías de análisis de tendencias de mercado
+- Comunidades de Reddit, YouTube y Twitter/X por los datos públicos disponibles
 
 ---
 
