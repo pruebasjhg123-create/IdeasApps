@@ -8,7 +8,7 @@ Copy the entire prompt below (starting from "## PROJECT BRIEF" section) and past
 
 ## PROJECT BRIEF
 
-I need you to architect and develop a complete full-stack SaaS application called "Ideas Browser" following professional development standards.
+I need you to architect and develop a complete full-stack SaaS application called "OpportunityRadar" following professional development standards.
 
 ### Phase 1: Foundation & Infrastructure
 
