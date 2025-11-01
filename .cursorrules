@@ -1,0 +1,185 @@
+# Ideas Browser - Full Stack Application Development Rules
+
+## Project Context
+
+You are architecting and developing a professional-grade SaaS application called "Ideas Browser" - an intelligent platform for discovering, analyzing, and managing business opportunities from multiple sources (Reddit, YouTube, Twitter/X, etc.).
+
+**Project Vision**: Create a premium-quality, production-ready application that helps entrepreneurs and product managers identify emerging trends and untapped market opportunities using AI-driven analysis and data aggregation.
+
+## Architecture & Tech Stack
+
+**Frontend**: Next.js 15 with TypeScript, React 19, Tailwind CSS, shadcn/ui
+**Backend**: Node.js with Express.js and TypeScript
+**Database**: MongoDB Atlas with Mongoose ODM
+**Authentication**: JWT + OAuth2 (Google, GitHub)
+**AI/ML**: OpenAI API, Anthropic Claude for analysis
+**Infrastructure**: Docker, Docker Compose for local development
+
+## Development Principles
+
+1. **Code Quality First**
+   - Write clean, maintainable TypeScript code with strict mode enabled
+   - Follow industry best practices for security, performance, and scalability
+   - Include comprehensive inline comments for complex logic
+   - Use meaningful variable and function names
+
+2. **Phased Development Approach**
+   - Phase 1: Core infrastructure (auth, database, API skeleton)
+   - Phase 2: Platform integrations (Reddit, YouTube, Twitter APIs)
+   - Phase 3: UI/UX implementation and component library
+   - Phase 4: Analytics, optimization, and production deployment
+
+3. **Professional Standards**
+   - All code must follow ESLint + Prettier formatting
+   - Implement proper error handling and logging
+   - Write unit tests for critical business logic
+   - Create comprehensive documentation
+
+4. **Spanish-First Development**
+   - UI text, labels, and documentation in Spanish
+   - English technical comments and code documentation
+   - Bilingual support capability for future internationalization
+
+## File Structure & Organization
+
+```
+IdeasApps/
+├── frontend/               # Next.js application
+│   ├── app/               # Next.js app router
+│   ├── components/        # Reusable React components
+│   ├── hooks/            # Custom React hooks
+│   ├── lib/              # Utility functions
+│   ├── styles/           # Global styles and Tailwind config
+│   └── types/            # TypeScript type definitions
+├── backend/               # Express.js API server
+│   ├── routes/           # API endpoints
+│   ├── controllers/       # Request handlers
+│   ├── models/           # Mongoose schemas
+│   ├── middleware/        # Custom middleware
+│   ├── services/         # Business logic
+│   ├── utils/            # Helper functions
+│   └── config/           # Configuration files
+├── database/              # Database setup and migrations
+│   ├── seeds/            # Sample data
+│   └── schemas/          # Database schema documentation
+├── docs/                  # Project documentation
+│   ├── API.md           # API documentation
+│   ├── SETUP.md         # Setup instructions
+│   └── ARCHITECTURE.md   # Technical architecture
+├── .cursorrules          # This file
+├── .env.example          # Environment variables template
+├── docker-compose.yml    # Docker composition
+├── README.md            # Project overview
+└── package.json         # Dependencies and scripts
+```
+
+## Key Requirements
+
+### Authentication & Security
+- Implement JWT-based authentication with secure token storage
+- Add CSRF protection and rate limiting
+- Use bcrypt for password hashing
+- Implement proper CORS configuration
+- Add input validation and sanitization
+
+### Database Design
+- Create normalized schema for ideas, users, integrations
+- Implement proper indexing for performance
+- Add timestamps (createdAt, updatedAt) to all documents
+- Create backup and recovery procedures
+
+### API Standards
+- RESTful API design with proper HTTP status codes
+- Comprehensive error responses with descriptive messages
+- API versioning (v1, v2, etc.)
+- Request/response documentation with examples
+
+### Frontend Standards
+- Mobile-responsive design (mobile-first approach)
+- Accessibility compliance (WCAG 2.1 AA)
+- Performance optimization (Core Web Vitals)
+- Proper loading and error states
+- Toast notifications for user feedback
+
+### Integration Requirements
+- **Reddit API**: Extract posts, comments, sentiment analysis
+- **YouTube API**: Videos, trends, engagement metrics
+- **Twitter/X API**: Tweets, trends, conversations
+- Implement rate limiting and caching strategies
+- Error handling for API failures
+
+## Coding Guidelines
+
+1. **Function Documentation**
+   ```typescript
+   /**
+    * Analyzes Reddit posts for emerging trends
+    * @param subreddit - Target subreddit to analyze
+    * @param limit - Number of posts to fetch (default: 100)
+    * @returns Promise containing analyzed trends array
+    */
+   async function analyzeTrends(subreddit: string, limit = 100): Promise<Trend[]>
+   ```
+
+2. **Error Handling**
+   - Use try-catch blocks with proper error logging
+   - Implement custom error classes for different error types
+   - Return meaningful error messages to clients
+
+3. **Async Operations**
+   - Prefer async/await over promises
+   - Implement proper timeout handling
+   - Add retry logic for external API calls
+
+4. **Type Safety**
+   - Define interfaces for all data structures
+   - Avoid using `any` type
+   - Use strict TypeScript configurations
+
+## Build & Deployment
+
+- Use Docker for containerization
+- Implement CI/CD pipeline with GitHub Actions
+- Environment-based configuration (.env files)
+- Database migrations automation
+- Graceful error recovery and monitoring
+
+## Performance Requirements
+
+- Frontend: Lighthouse score > 90
+- API response time: < 200ms for 95th percentile
+- Database queries: Properly indexed with < 100ms response
+- Image optimization and lazy loading
+- Efficient caching strategies
+
+## Testing Strategy
+
+- Unit tests for business logic (Jest)
+- Integration tests for API endpoints
+- E2E tests for critical user flows (Playwright/Cypress)
+- Minimum 70% code coverage for critical paths
+
+## When Implementing Features
+
+1. Start with database schema and types
+2. Create API endpoints with validation
+3. Implement business logic in services
+4. Build UI components with proper state management
+5. Add comprehensive tests
+6. Document the feature in README/docs
+
+## Important Notes
+
+- DO NOT skip creating .env.example files
+- DO NOT commit sensitive credentials
+- DO NOT hardcode API keys or secrets
+- DO include comprehensive error handling
+- DO write self-documenting code
+- DO follow consistent naming conventions
+- DO implement proper logging
+
+---
+
+**Last Updated**: 2025
+**Project Status**: Active Development
+**Version**: 1.0.0
