@@ -1,5 +1,5 @@
 {
-  "name": "ideas-browser",
+  "name": "opportunity-radar",
   "version": "1.0.0",
   "description": "Plataforma inteligente para descubrir ideas y tendencias de negocio",
   "main": "backend/server.ts",
@@ -22,7 +22,7 @@
     "analysis",
     "opportunities"
   ],
-  "author": "Ideas Browser Team",
+  "author": "OpportunityRadar Team",
   "license": "MIT",
   "devDependencies": {
     "@types/express": "^4.17.21",
