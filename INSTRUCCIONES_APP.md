@@ -1,8 +1,8 @@
-# INSTRUCCIONES PARA CREAR LA APP - IDEA BROWSER
+# INSTRUCCIONES PARA CREAR LA APP - OPPORTUNITYRADAR
 
 ## Descripción General
 
-Esta aplicación es un "idea browser" o buscador de tendencias inspirado en las técnicas de Greg Isenberg. Permite descubrir, recopilar, analizar y visualizar oportunidades e ideas provenientes de diversas plataformas sociales y de contenido (Reddit, YouTube, Twitter/X, Facebook, blogs, etc.).
+Esta aplicación es un "OPPORTUNITYRADAR" o buscador de tendencias inspirado en las técnicas de best practices in market trend analysis. Permite descubrir, recopilar, analizar y visualizar oportunidades e ideas provenientes de diversas plataformas sociales y de contenido (Reddit, YouTube, Twitter/X, Facebook, blogs, etc.).
 
 ## Requisitos Técnicos Detallados
 
@@ -147,7 +147,7 @@ Esta aplicación es un "idea browser" o buscador de tendencias inspirado en las 
 - Ejemplos de casos de uso
 - FAQ interactivo
 
-### 6. Mecánica de Descubrimiento de Ideas (Inspirada en Greg Isenberg)
+### 6. Mecánica de Descubrimiento de Ideas (Inspirada en best practices in market trend analysis)
 
 #### Análisis de Problemas
 - Monitorear comunidades específicas (subreddits)
